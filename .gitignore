@@ -1,0 +1,12 @@
+# Ficheros que crean los propios ejemplos al ejecutarse
+registro.csv
+registro.txt
+equipos*.csv
+festivos*.csv
+puestos.csv
+settings.json
+
+# Editores y sistema
+.vscode/
+Thumbs.db
+desktop.ini

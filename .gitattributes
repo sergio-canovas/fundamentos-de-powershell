@@ -1,0 +1,6 @@
+# Los scripts se guardan con finales de línea de Windows y con BOM,
+# para que Windows PowerShell 5.1 lea bien las tildes.
+* text=auto
+*.ps1  text eol=crlf
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
