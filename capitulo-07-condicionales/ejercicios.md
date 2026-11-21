@@ -4,7 +4,7 @@
 
 **Nivel 2.** Usando `switch` y la propiedad `DayOfWeek` de `Get-Date`, escribe un script que diga si hoy es laborable o fin de semana.
 
-**Nivel 3.** El siguiente script debería mostrar la calificación correspondiente a una nota, pero con un 9,5 dice *Aprobado*. Encuentra el fallo y corrígelo.
+**Nivel 3.** El siguiente script debería mostrar la calificación correspondiente a una nota, pero con un 9,5 dice *Aprobado*. Averigua por qué y corrígelo.
 
 ```powershell
 $nota = 9.5

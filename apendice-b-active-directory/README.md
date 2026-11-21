@@ -1,5 +1,8 @@
 ﻿# Apéndice B. Gestionando Active Directory
 
+- [Enunciados de los ejercicios](ejercicios.md)
+- [Soluciones](soluciones.md)
+
 | Fichero | Dónde está en el libro |
 |---|---|
 | [ejemplos/01-instalacion-del-modulo.ps1](ejemplos/01-instalacion-del-modulo.ps1) | Instalación del módulo |
@@ -23,4 +26,4 @@
 | [ejemplos/19-mover-objetos-de-ou.ps1](ejemplos/19-mover-objetos-de-ou.ps1) | Mover objetos de OU |
 | [ejemplos/20-la-ia-y-tu.ps1](ejemplos/20-la-ia-y-tu.ps1) | La IA y tú |
 | [ejemplos/21-la-ia-y-tu.ps1](ejemplos/21-la-ia-y-tu.ps1) | La IA y tú |
-| [ejemplos/22-solucion.ps1](ejemplos/22-solucion.ps1) | Ejercicio > Solución |
+| [soluciones/solucion.ps1](soluciones/solucion.ps1) | Solución del ejercicio |

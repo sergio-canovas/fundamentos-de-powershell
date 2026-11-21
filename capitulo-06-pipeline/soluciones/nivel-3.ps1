@@ -4,7 +4,7 @@
 #
 # Enunciado: Este comando debería mostrar los nombres de los cinco procesos que más CPU
 # han consumido, pero el resultado no está ordenado por CPU: son cinco procesos
-# cualesquiera. Encuentra el fallo y corrígelo.
+# cualesquiera. Descubre por qué y arréglalo.
 
 Get-Process |
     Sort-Object -Property CPU -Descending |

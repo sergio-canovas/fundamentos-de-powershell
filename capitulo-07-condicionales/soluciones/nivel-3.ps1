@@ -3,7 +3,7 @@
 # Solución del ejercicio de nivel 3
 #
 # Enunciado: El siguiente script debería mostrar la calificación correspondiente a una
-# nota, pero con un 9,5 dice Aprobado. Encuentra el fallo y corrígelo.
+# nota, pero con un 9,5 dice Aprobado. Averigua por qué y corrígelo.
 
 $nota = 9.5
 

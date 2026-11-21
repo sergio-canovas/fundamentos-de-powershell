@@ -1,5 +1,8 @@
 ﻿# Apéndice A. Reinando en tu red: administración remota
 
+- [Enunciados de los ejercicios](ejercicios.md)
+- [Soluciones](soluciones.md)
+
 | Fichero | Dónde está en el libro |
 |---|---|
 | [ejemplos/01-antes-de-empezar-winrm.ps1](ejemplos/01-antes-de-empezar-winrm.ps1) | Antes de empezar: WinRM |
@@ -17,4 +20,4 @@
 | [ejemplos/13-una-alternativa-en-powershell-7-ssh.ps1](ejemplos/13-una-alternativa-en-powershell-7-ssh.ps1) | Una alternativa en PowerShell 7: SSH |
 | [ejemplos/14-la-ia-y-tu.ps1](ejemplos/14-la-ia-y-tu.ps1) | La IA y tú |
 | [ejemplos/15-la-ia-y-tu.ps1](ejemplos/15-la-ia-y-tu.ps1) | La IA y tú |
-| [ejemplos/16-solucion.ps1](ejemplos/16-solucion.ps1) | Ejercicio > Solución |
+| [soluciones/solucion.ps1](soluciones/solucion.ps1) | Solución del ejercicio |

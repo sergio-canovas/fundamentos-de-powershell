@@ -18,7 +18,7 @@ git clone https://github.com/sergio-canovas/fundamentos-de-powershell.git
 
 ## Antes de ejecutar nada
 
-**Permite la ejecución de scripts.** Como vimos en el capítulo 2, Windows no deja ejecutar scripts hasta que se lo indicas. Desde PowerShell, sin necesidad de abrirlo como administrador:
+**Permite la ejecución de scripts.** Como vimos en el capítulo 2, Windows PowerShell 5.1 no deja ejecutar scripts hasta que se lo indicas (PowerShell 7 ya viene configurado con `RemoteSigned`). Desde la consola, sin necesidad de abrirla como administrador:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

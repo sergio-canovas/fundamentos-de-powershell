@@ -4,7 +4,7 @@
 
 **Nivel 2.** Muestra los archivos de la carpeta C:\Windows (sin entrar en subcarpetas) que ocupen más de 1 MB, ordenados de mayor a menor, con su nombre y su tamaño. Después, averigua cuántos son y cuánto ocupan en total.
 
-**Nivel 3.** Este comando debería mostrar los nombres de los cinco procesos que más CPU han consumido, pero el resultado no está ordenado por CPU: son cinco procesos cualesquiera. Encuentra el fallo y corrígelo.
+**Nivel 3.** Este comando debería mostrar los nombres de los cinco procesos que más CPU han consumido, pero el resultado no está ordenado por CPU: son cinco procesos cualesquiera. Descubre por qué y arréglalo.
 
 ```powershell
 Get-Process |
