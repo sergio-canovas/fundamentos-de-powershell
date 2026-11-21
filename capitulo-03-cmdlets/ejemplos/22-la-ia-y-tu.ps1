@@ -9,5 +9,5 @@ Get-ChildItem -Path "C:\Logs" -File |
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# What if: Performing the operation "Remove File" on target "C:\Logs\antiguo1.log".
-# What if: Performing the operation "Remove File" on target "C:\Logs\antiguo2.log".
+# What If: Realizando la operación "Quitar archivo" en el objetivo "C:\Logs\antiguo1.log".
+# What If: Realizando la operación "Quitar archivo" en el objetivo "C:\Logs\antiguo2.log".

@@ -11,4 +11,4 @@ Write-Host "Último error: $($Error[0].Exception.Message)"
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# Último error: Cannot find path 'C:\Temp\no_existe.txt' because it does not exist.
+# Último error: No se encuentra la ruta de acceso 'C:\Temp\no_existe.txt' porque no existe.

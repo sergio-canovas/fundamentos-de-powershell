@@ -15,5 +15,5 @@ Test-Connection -ComputerName $equipo
 # Line |
 #    6 |  Test-Connection -ComputerName $equipo
 #      |                                ~~~~~~~
-#      | Cannot validate argument on parameter 'TargetName'. The argument is null or empty. Provide an argument that is
-#      | not null or empty, and then try the command again.
+#      | No se puede validar el argumento en el parámetro "TargetName". El argumento es nulo o está vacío. Especifique un
+#      | argumento que no sea NULL o esté vacío y, después, vuelva a intentar el comando.

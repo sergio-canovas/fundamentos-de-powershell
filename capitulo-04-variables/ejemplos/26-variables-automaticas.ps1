@@ -6,4 +6,4 @@ $true = 5
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# WriteError: Cannot overwrite variable true because it is read-only or constant.
+# WriteError: No se puede sobrescribir la variable true porque es de solo lectura o constante.

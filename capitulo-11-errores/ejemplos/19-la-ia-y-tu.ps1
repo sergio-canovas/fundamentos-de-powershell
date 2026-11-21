@@ -6,4 +6,4 @@ Copy-Item -Path "C:\Datos\informe.xlsx" -Destination "C:\Copias\" -ErrorAction S
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# Error al copiar: Cannot find path 'C:\Datos\informe.xlsx' because it does not exist.
+# Error al copiar: No se encuentra la ruta de acceso 'C:\Datos\informe.xlsx' porque no existe.

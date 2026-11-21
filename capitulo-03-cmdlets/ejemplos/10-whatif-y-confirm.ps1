@@ -6,4 +6,4 @@ Remove-Item -Path "C:\Practicas\Copias\hola.txt" -WhatIf
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# What if: Performing the operation "Remove File" on target "C:\Practicas\Copias\hola.txt".
+# What If: Realizando la operación "Quitar archivo" en el objetivo "C:\Practicas\Copias\hola.txt".

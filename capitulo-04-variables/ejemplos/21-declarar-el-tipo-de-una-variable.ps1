@@ -10,4 +10,4 @@ $edad = "treinta y dos"
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
 # Int32
-# MetadataError: Cannot convert value "treinta y dos" to type "System.Int32". Error: "The input string 'treinta y dos' was not in a correct format."
+# MetadataError: No se puede convertir el valor "treinta y dos" al tipo "System.Int32". Error: "The input string 'treinta y dos' was not in a correct format."

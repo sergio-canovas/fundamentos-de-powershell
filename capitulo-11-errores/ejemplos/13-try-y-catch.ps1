@@ -11,4 +11,4 @@ catch {
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# Algo ha fallado: Cannot find path 'C:\directorio_inventado\' because it does not exist.
+# Algo ha fallado: No se encuentra la ruta de acceso 'C:\directorio_inventado\' porque no existe.

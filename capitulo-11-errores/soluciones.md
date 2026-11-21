@@ -10,7 +10,7 @@ Write-Host "Último error: $($Error[0].Exception.Message)"
 ```
 
 ```
-Último error: Cannot find path 'C:\Temp\no_existe.txt' because it does not exist.
+Último error: No se encuentra la ruta de acceso 'C:\Temp\no_existe.txt' porque no existe.
 ```
 
 **Nivel 2.**

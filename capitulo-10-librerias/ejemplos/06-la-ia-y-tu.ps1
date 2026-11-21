@@ -10,13 +10,14 @@ C:\Practicas\Calculos\calculos.ps1
 # Line |
 #    1 |  . .\librerias\funciones_matematicas.ps1
 #      |    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#      | The term '.\librerias\funciones_matematicas.ps1' is not recognized as a name of a cmdlet, function, script file,
-#      | or executable program. Check the spelling of the name, or if a path was included, verify that the path is
-#      | correct and try again.
+#      | El término ".\librerias\funciones_matematicas.ps1" no se reconoce como nombre de un cmdlet, función, archivo de
+#      | script o programa ejecutable. Compruebe la ortografía del nombre o, si se incluyó una ruta de acceso, compruebe
+#      | que la ruta de acceso es correcta e inténtelo de nuevo.
 # sumar: C:\Practicas\Calculos\calculos.ps1:3
 # Line |
 #    3 |  sumar -numero1 240 -numero2 150
 #      |  ~~~~~
-#      | The term 'sumar' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
-#      | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+#      | El término "sumar" no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+#      | Compruebe la ortografía del nombre o, si se incluyó una ruta de acceso, compruebe que la ruta de acceso es
+#      | correcta e inténtelo de nuevo.
 # Cálculos terminados

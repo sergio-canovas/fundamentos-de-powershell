@@ -25,4 +25,4 @@ class Equipo {
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# MethodException: Cannot find an overload for "new" and the argument count: "0".
+# MethodException: No se encuentra una sobrecarga para "new" y el recuento de argumentos: "0".

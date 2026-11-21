@@ -96,4 +96,4 @@ String
 Int32
 ```
 
-En el CSV, el puesto es un texto; en nuestros objetos, un número entero. Como el constructor declara `[int]$puesto`, PowerShell convierte "1" en 1 al crear cada equipo. Es una de las ventajas de indicar los tipos en una clase: si en el CSV apareciera un puesto escrito como "uno", el constructor fallaría con un error claro (*Cannot convert argument "puesto", with value: "uno"...*) en lugar de dejar que ese texto se cuele en tus datos.
+En el CSV, el puesto es un texto; en nuestros objetos, un número entero. Como el constructor declara `[int]$puesto`, PowerShell convierte "1" en 1 al crear cada equipo. Es una de las ventajas de indicar los tipos en una clase: si en el CSV apareciera un puesto escrito como "uno", el constructor fallaría con un error claro (*No se puede convertir el argumento "puesto", con el valor "uno"...*) en lugar de dejar que ese texto se cuele en tus datos.

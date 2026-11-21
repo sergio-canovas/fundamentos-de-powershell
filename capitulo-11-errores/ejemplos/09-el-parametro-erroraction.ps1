@@ -13,5 +13,5 @@ Write-Host "¿Esto se lee?"
 # Line |
 #    1 |  Get-ChildItem -Path C:\carpeta_inventada -ErrorAction Continue
 #      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#      | Cannot find path 'C:\carpeta_inventada' because it does not exist.
+#      | No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque no existe.
 # ¿Esto se lee?

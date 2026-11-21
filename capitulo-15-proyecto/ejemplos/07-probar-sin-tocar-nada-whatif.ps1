@@ -6,4 +6,4 @@ Copy-Item -Path C:\Temp\Kaos\impresora1.jpg -Destination C:\Temp\Kaos\2019 -What
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):
-# What if: Performing the operation "Copy File" on target "Item: C:\Temp\Kaos\impresora1.jpg Destination: C:\Temp\Kaos\2019".
+# What If: Realizando la operación "Copiar archivo" en el objetivo "Elemento: C:\Temp\Kaos\impresora1.jpg Destino: C:\Temp\Kaos\2019".
