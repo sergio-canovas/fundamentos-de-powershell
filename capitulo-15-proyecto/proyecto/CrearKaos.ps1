@@ -16,7 +16,9 @@ $ejemplos = @(
 )
 
 foreach ($ejemplo in $ejemplos) {
-    $fichero = New-Item -Path (Join-Path -Path $ruta -ChildPath $ejemplo.Nombre) -ItemType File -Force
+    $fichero = New-Item -Path (
+        Join-Path -Path $ruta -ChildPath $ejemplo.Nombre
+    ) -ItemType File -Force
     $fichero.LastWriteTime = [datetime]$ejemplo.Fecha
 }
 
@@ -28,10 +30,10 @@ Get-ChildItem -Path $ruta
 #
 # Mode                 LastWriteTime         Length Name
 # ----                 -------------         ------ ----
-# -a---          08/09/2021    00:00              0 caja_cartón.jpg
-# -a---          10/09/2021    00:00              0 FCW1932A4RT.jpg
-# -a---          27/06/2019    00:00              0 impresora1.jpg
-# -a---          28/06/2019    00:00              0 papelera2.jpg
-# -a---          17/01/2020    00:00              0 personal1.jpg
-# -a---          02/03/2020    00:00              0 presupuesto.xlsx
-# -a---          24/01/2020    00:00              0 Rack1_v1.JPG
+# -a---          08/09/2021     0:00              0 caja_cartón.jpg
+# -a---          10/09/2021     0:00              0 FCW1932A4RT.jpg
+# -a---          27/06/2019     0:00              0 impresora1.jpg
+# -a---          28/06/2019     0:00              0 papelera2.jpg
+# -a---          17/01/2020     0:00              0 personal1.jpg
+# -a---          02/03/2020     0:00              0 presupuesto.xlsx
+# -a---          24/01/2020     0:00              0 Rack1_v1.JPG

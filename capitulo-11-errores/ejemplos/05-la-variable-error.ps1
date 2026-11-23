@@ -13,6 +13,7 @@ Write-Host $Error[0]
 # Line |
 #    1 |  Get-ChildItem -Path C:\carpeta_inventada
 #      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#      | No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque no existe.
+#      | No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque
+#      | no existe.
 # Reproduciendo último error:
 # No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque no existe.

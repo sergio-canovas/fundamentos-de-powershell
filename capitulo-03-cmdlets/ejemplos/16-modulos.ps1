@@ -8,5 +8,5 @@ Get-Command -Module Microsoft.PowerShell.Archive
 # Salida que aparece en el libro (la tuya puede variar):
 # CommandType     Name                                               Version    Source
 # -----------     ----                                               -------    ------
-# Function        Compress-Archive                                   1.2.7      Microsoft.PowerShell.Archive
-# Function        Expand-Archive                                     1.2.7      Microsoft.PowerShell.Archive
+# Function        Compress-Archive                                   1.2.7      Micros…
+# Function        Expand-Archive                                     1.2.7      Micros…

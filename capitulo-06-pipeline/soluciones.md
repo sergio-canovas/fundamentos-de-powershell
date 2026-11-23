@@ -33,7 +33,7 @@ Get-ChildItem -Path C:\Windows -File |
     Measure-Object -Property Length -Sum
 ```
 
-Si ejecutas los dos bloques a la vez como un único script, PowerShell intentará encajar el resultado del segundo en la tabla del primero y verás algo extraño. Ejecútalos por separado (selecciónalos y pulsa F8).
+Si ejecutas los dos bloques a la vez como un único script, PowerShell intentará encajar el resultado del segundo en la tabla del primero y verás algo extraño: en lugar del recuento y la suma, una fila casi vacía al final de la tabla. Ejecútalos por separado (selecciónalos y pulsa F8).
 
 **Nivel 3.** El primer `Select-Object` se queda solo con la propiedad `Name`. Cuando los objetos llegan a `Sort-Object`, ya no tienen la propiedad `CPU`, así que no hay nada por lo que ordenar. PowerShell no da ningún error: simplemente los deja en un orden que no significa nada. Hay que ordenar primero y seleccionar después:
 

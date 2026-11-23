@@ -3,7 +3,8 @@
 # Apartado: CSV para Excel
 # Usa -Encoding utf8BOM, que solo existe en PowerShell 7.
 
-$equipos | Export-Csv -Path equipos_excel.csv -NoTypeInformation -Delimiter ';' -Encoding utf8BOM
+$equipos | Export-Csv -Path equipos_excel.csv -NoTypeInformation `
+    -Delimiter ';' -Encoding utf8BOM
 Get-Content -Path equipos_excel.csv
 
 # ----------------------------------------------------------------------

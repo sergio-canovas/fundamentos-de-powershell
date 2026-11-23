@@ -1,6 +1,6 @@
 ﻿# Capítulo 4. Variables y tipos de datos. Ejercicios
 
-**Nivel 1.** Crea tres variables con tu nombre, tu edad y si has terminado este curso (`$true` o `$false`). Muestra una frase que las use todas y, después, el tipo de cada una con `.GetType().Name`.
+**Nivel 1.** Crea tres variables con tu nombre, tu edad y si has terminado este libro (`$true` o `$false`). Muestra una frase que las use todas y, después, el tipo de cada una con `.GetType().Name`.
 
 **Nivel 2.** Crea un array con cinco ciudades. Muestra la primera, la última y cuántas hay. Añade una ciudad más y vuelve a contarlas.
 

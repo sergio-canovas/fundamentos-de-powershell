@@ -8,7 +8,8 @@
 # Usa -Encoding utf8BOM, que solo existe en PowerShell 7.
 
 $importados | Sort-Object { [int]$_.Puesto } |
-    Export-Csv -Path equipos_ordenados.csv -NoTypeInformation -Delimiter ';' -Encoding utf8BOM
+    Export-Csv -Path equipos_ordenados.csv -NoTypeInformation `
+        -Delimiter ';' -Encoding utf8BOM
 
 Get-Content -Path equipos_ordenados.csv
 

@@ -4,4 +4,5 @@
 # Usa -HostName (conexión por SSH), que solo existe en PowerShell 7.
 
 Enter-PSSession -HostName servidor-linux -UserName sergio
-Invoke-Command -HostName servidor-linux -UserName sergio -ScriptBlock { Get-Process -Name pwsh }
+Invoke-Command -HostName servidor-linux -UserName sergio `
+    -ScriptBlock { Get-Process -Name pwsh }

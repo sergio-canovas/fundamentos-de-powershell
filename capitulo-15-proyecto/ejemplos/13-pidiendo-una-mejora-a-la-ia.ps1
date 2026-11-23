@@ -7,10 +7,12 @@
 # Cuando lo hayas entendido, borra la línea del throw.
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
-# En filtrador.ps1 (el parámetro $Nombre pasa a ser $Origen, con la ruta completa)
+# En filtrador.ps1 (el parámetro $Nombre pasa a ser $Origen,
+# con la ruta completa)
 try {
     if (-not (Test-Path -Path $rutaDestino)) {
-        New-Item -Path $rutaDestino -ItemType Directory -ErrorAction Stop | Out-Null
+        New-Item -Path $rutaDestino -ItemType Directory `
+            -ErrorAction Stop | Out-Null
     }
     Move-Item -Path $Origen -Destination $rutaDestino -Force
     $resultado = "Movido"
@@ -24,5 +26,6 @@ catch {
 $listado = Get-ChildItem -Path $Ruta -Recurse
 
 $resultados = foreach ($fichero in $listado) {
-    filtrador -Anio $fichero.LastWriteTime.Year -Ruta $Ruta -Origen $fichero.FullName
+    filtrador -Anio $fichero.LastWriteTime.Year `
+        -Ruta $Ruta -Origen $fichero.FullName
 }

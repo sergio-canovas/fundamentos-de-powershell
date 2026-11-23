@@ -11,4 +11,4 @@ $directorio
 #
 # Mode                 LastWriteTime         Length Name
 # ----                 -------------         ------ ----
-# d----          18/11/2026    05:34                Windows
+# d----          18/11/2026     5:34                Windows

@@ -15,8 +15,10 @@ $inventario = [PSCustomObject]@{
     )
 }
 
-$inventario | ConvertTo-Json | Set-Content -Path inventario.json -Encoding utf8
+$inventario | ConvertTo-Json |
+    Set-Content -Path inventario.json -Encoding utf8
 
 # Al día siguiente...
-$recuperado = Get-Content -Path inventario.json -Raw | ConvertFrom-Json
+$recuperado = Get-Content -Path inventario.json -Raw |
+    ConvertFrom-Json
 $recuperado.Equipos[0].Discos[0].TamanoGB

@@ -9,4 +9,4 @@ Get-Command ping -All
 # CommandType     Name                                               Version    Source
 # -----------     ----                                               -------    ------
 # Function        ping
-# Application     PING.EXE                                           10.0.2610… C:\WINDOWS\system32\PING.EXE
+# Application     PING.EXE                                           10.0.2610… C:\WIN…

@@ -15,9 +15,11 @@ Write-Host "Error aritmético-----------------------------"
 # Line |
 #    2 |  Write-Hos "Línea 1"
 #      |  ~~~~~~~~~
-#      | El término "Write-Hos" no se reconoce como nombre de un cmdlet, función, archivo de script o programa
-#      | ejecutable. Compruebe la ortografía del nombre o, si se incluyó una ruta de acceso, compruebe que la ruta de
-#      | acceso es correcta e inténtelo de nuevo.
+#      | El término "Write-Hos" no se reconoce como nombre de un cmdlet,
+#      | función, archivo de script o programa ejecutable. Compruebe la
+#      | ortografía del nombre o, si se incluyó una ruta de acceso,
+#      | compruebe que la ruta de acceso es correcta e inténtelo de
+#      | nuevo.
 # Error aritmético-----------------------------
 # RuntimeException: C:\Practicas\depuracion.ps1:5
 # Line |

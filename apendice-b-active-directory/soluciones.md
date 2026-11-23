@@ -3,7 +3,8 @@
 Intenta resolver los ejercicios antes de mirar aquí. Se aprende mucho más equivocándose que leyendo la respuesta.
 
 ```powershell
-$deshabilitados = @(Get-ADUser -Filter "Enabled -eq 'False'" -SearchBase "OU=Sistemas,DC=PSMola,DC=com")
+$deshabilitados = @(Get-ADUser -Filter "Enabled -eq 'False'" `
+    -SearchBase "OU=Sistemas,DC=PSMola,DC=com")
 
 $deshabilitados | Select-Object -Property SamAccountName, Name
 "Cuentas deshabilitadas: $($deshabilitados.Count)"

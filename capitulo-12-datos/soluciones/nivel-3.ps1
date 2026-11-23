@@ -8,7 +8,8 @@
 # un `if` dentro y un `[PSCustomObject]` por cada festivo que te interese.
 # Usa -Encoding utf8BOM, que solo existe en PowerShell 7.
 
-$festivos = Invoke-RestMethod -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
+$festivos = Invoke-RestMethod `
+    -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
 $comunidad = "ES-VC"
 
 $misFestivos = foreach ($festivo in $festivos) {
@@ -20,7 +21,8 @@ $misFestivos = foreach ($festivo in $festivos) {
     }
 }
 
-$misFestivos | Export-Csv -Path festivos2027.csv -NoTypeInformation -Delimiter ';' -Encoding utf8BOM
+$misFestivos | Export-Csv -Path festivos2027.csv -NoTypeInformation `
+    -Delimiter ';' -Encoding utf8BOM
 Get-Content -Path festivos2027.csv
 
 # ----------------------------------------------------------------------

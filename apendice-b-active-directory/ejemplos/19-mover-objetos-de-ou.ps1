@@ -7,5 +7,6 @@
 # Cuando lo hayas entendido, borra la línea del throw.
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
-Get-ADComputer -Filter "OperatingSystem -like 'Windows*' -and Enabled -eq 'False'" |
+Get-ADComputer -Filter `
+    "OperatingSystem -like 'Windows*' -and Enabled -eq 'False'" |
     Move-ADObject -TargetPath "OU=Deshabilitados,DC=PSMola,DC=com"

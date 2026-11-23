@@ -4,7 +4,8 @@
 
 try {
     if (-not (Test-Path -Path $rutaDestino)) {
-        New-Item -Path $rutaDestino -ItemType Directory -ErrorAction Stop | Out-Null
+        New-Item -Path $rutaDestino -ItemType Directory `
+            -ErrorAction Stop | Out-Null
     }
     Copy-Item -Path $rutaOrigen -Destination $rutaDestino -ErrorAction Stop
     $resultado = "Copiado"

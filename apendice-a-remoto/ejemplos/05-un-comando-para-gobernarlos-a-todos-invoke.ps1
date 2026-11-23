@@ -4,4 +4,5 @@
 
 Invoke-Command -Session $sesion -ScriptBlock {
     Get-Volume -DriveLetter C
-} | Select-Object -Property PSComputerName, DriveLetter, SizeRemaining, Size
+} | Select-Object -Property PSComputerName, DriveLetter,
+    SizeRemaining, Size

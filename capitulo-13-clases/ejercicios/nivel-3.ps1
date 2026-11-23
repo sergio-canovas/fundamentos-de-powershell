@@ -8,7 +8,8 @@
 # extra: en el capítulo 12 vimos que `Import-Csv` lo devuelve todo como texto. ¿De qué
 # tipo es la propiedad `puesto` de tus objetos? ¿Por qué?
 
-New-Item -Path C:\Practicas\Datos -ItemType Directory -Force | Out-Null
+New-Item -Path C:\Practicas\Datos -ItemType Directory -Force |
+    Out-Null
 
 Set-Content -Path C:\Practicas\Datos\puestos.csv -Value @(
     "Nombre,Puesto,SO"

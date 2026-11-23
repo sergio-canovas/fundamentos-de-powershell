@@ -7,7 +7,8 @@
 **Nivel 3.** Crea el archivo `puestos.csv` con el código siguiente. Después, usando la clase `Equipo` con el constructor de tres parámetros, fabrica un objeto por cada fila del CSV, guárdalos en `$almacen` y muestra solo los equipos con Windows 10. Pregunta extra: en el capítulo 12 vimos que `Import-Csv` lo devuelve todo como texto. ¿De qué tipo es la propiedad `puesto` de tus objetos? ¿Por qué?
 
 ```powershell
-New-Item -Path C:\Practicas\Datos -ItemType Directory -Force | Out-Null
+New-Item -Path C:\Practicas\Datos -ItemType Directory -Force |
+    Out-Null
 
 Set-Content -Path C:\Practicas\Datos\puestos.csv -Value @(
     "Nombre,Puesto,SO"

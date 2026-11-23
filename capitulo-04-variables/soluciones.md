@@ -9,14 +9,14 @@ $nombre = "Ana"
 $edad = 20
 $terminado = $false
 
-Write-Host "Me llamo $nombre, tengo $edad años. Curso terminado: $terminado"
+Write-Host "Me llamo $nombre, tengo $edad años. Libro terminado: $terminado"
 $nombre.GetType().Name
 $edad.GetType().Name
 $terminado.GetType().Name
 ```
 
 ```
-Me llamo Ana, tengo 20 años. Curso terminado: False
+Me llamo Ana, tengo 20 años. Libro terminado: False
 String
 Int32
 Boolean

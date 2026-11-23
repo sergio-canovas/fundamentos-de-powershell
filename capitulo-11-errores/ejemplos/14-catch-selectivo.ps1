@@ -11,5 +11,6 @@ $Error[0].Exception.GetType().FullName
 # Line |
 #    1 |  Get-ChildItem -Path C:\CarpetaInventada
 #      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#      | No se encuentra la ruta de acceso 'C:\CarpetaInventada' porque no existe.
+#      | No se encuentra la ruta de acceso 'C:\CarpetaInventada' porque
+#      | no existe.
 # System.Management.Automation.ItemNotFoundException

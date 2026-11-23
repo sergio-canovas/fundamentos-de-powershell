@@ -39,7 +39,8 @@ Es el mismo problema que vimos con `Where-Object`: `Import-Csv` devuelve texto y
 
 ```powershell
 $importados | Sort-Object { [int]$_.Puesto } |
-    Export-Csv -Path equipos_ordenados.csv -NoTypeInformation -Delimiter ';' -Encoding utf8BOM
+    Export-Csv -Path equipos_ordenados.csv -NoTypeInformation `
+        -Delimiter ';' -Encoding utf8BOM
 
 Get-Content -Path equipos_ordenados.csv
 ```
@@ -56,7 +57,8 @@ En Windows PowerShell 5.1, cambia `utf8BOM` por `UTF8`.
 **Nivel 3.** Este ejemplo usa la Comunitat Valenciana (`ES-VC`). Cambia el código por el de tu comunidad: `ES-AN` para Andalucía, `ES-CT` para Cataluña, `ES-GA` para Galicia, `ES-MD` para Madrid, `ES-PV` para el País Vasco, etc.
 
 ```powershell
-$festivos = Invoke-RestMethod -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
+$festivos = Invoke-RestMethod `
+    -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
 $comunidad = "ES-VC"
 
 $misFestivos = foreach ($festivo in $festivos) {
@@ -68,7 +70,8 @@ $misFestivos = foreach ($festivo in $festivos) {
     }
 }
 
-$misFestivos | Export-Csv -Path festivos2027.csv -NoTypeInformation -Delimiter ';' -Encoding utf8BOM
+$misFestivos | Export-Csv -Path festivos2027.csv -NoTypeInformation `
+    -Delimiter ';' -Encoding utf8BOM
 Get-Content -Path festivos2027.csv
 ```
 

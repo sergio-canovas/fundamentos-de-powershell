@@ -51,7 +51,8 @@ Y en `Organizar.ps1` se lo pasamos:
 ```powershell
 $resultados = foreach ($fichero in $listado) {
     $mes = $fichero.LastWriteTime.ToString("MM")
-    filtrador -Anio $fichero.LastWriteTime.Year -Mes $mes -Ruta $Ruta -Nombre $fichero.Name
+    filtrador -Anio $fichero.LastWriteTime.Year -Mes $mes `
+        -Ruta $Ruta -Nombre $fichero.Name
 }
 ```
 

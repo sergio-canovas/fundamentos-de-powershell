@@ -7,4 +7,5 @@
 # Cuando lo hayas entendido, borra la línea del throw.
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
-Get-ADComputer -Identity PC-ALMACEN | Move-ADObject -TargetPath "OU=VAL,DC=PSMola,DC=com"
+Get-ADComputer -Identity PC-ALMACEN |
+    Move-ADObject -TargetPath "OU=MAD,OU=WS,DC=PSMola,DC=com"

@@ -42,7 +42,8 @@ function factoria {
 
     foreach ($maquina in $lista) {
         # Obtenemos el sistema operativo
-        $so = (Get-CimInstance -ClassName CIM_OperatingSystem -ComputerName $maquina).Caption
+        $so = (Get-CimInstance -ClassName CIM_OperatingSystem `
+            -ComputerName $maquina).Caption
 
         # Añadimos la máquina a la colección
         $coleccion += [Equipo]::new($maquina, $puesto, $so)

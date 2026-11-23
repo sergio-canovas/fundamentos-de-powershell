@@ -11,7 +11,8 @@ Write-Host "El script continúa"
 # Line |
 #    1 |  Get-Item -Path C:\carpeta_inventada, C:\Windows
 #      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#      | No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque no existe.
+#      | No se encuentra la ruta de acceso 'C:\carpeta_inventada' porque
+#      | no existe.
 #
 #     Directory: C:\
 #

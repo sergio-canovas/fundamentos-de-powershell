@@ -37,11 +37,11 @@ potencia -base 2 -exponente 10
 ```
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-Function        dividir                                            0.0        FuncionesMatematicas
-Function        multiplicar                                        0.0        FuncionesMatematicas
-Function        potencia                                           0.0        FuncionesMatematicas
-Function        restar                                             0.0        FuncionesMatematicas
-Function        sumar                                              0.0        FuncionesMatematicas
+Function        dividir                                            0.0        Funcio…
+Function        multiplicar                                        0.0        Funcio…
+Function        potencia                                           0.0        Funcio…
+Function        restar                                             0.0        Funcio…
+Function        sumar                                              0.0        Funcio…
 1024
 ```
 

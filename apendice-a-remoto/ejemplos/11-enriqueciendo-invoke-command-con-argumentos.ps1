@@ -9,12 +9,14 @@ $letra = Read-Host -Prompt "Introduce la letra de la unidad"
 $equipos = @("PC-RECEPCION", "PC-COMPRAS", "PC-ALMACEN")
 
 # Creación de sesiones
-$sesion = New-PSSession -ComputerName $equipos -Credential sergio.canovas
+$sesion =
+    New-PSSession -ComputerName $equipos -Credential sergio.canovas
 
 # Lanzamiento de comandos sobre las sesiones
 Invoke-Command -Session $sesion -ScriptBlock {
     Get-Volume -DriveLetter $args[0]
-} -ArgumentList $letra | Select-Object -Property PSComputerName, DriveLetter, SizeRemaining, Size
+} -ArgumentList $letra | Select-Object -Property PSComputerName,
+    DriveLetter, SizeRemaining, Size
 
 # Eliminar sesiones abiertas
 Get-PSSession | Remove-PSSession

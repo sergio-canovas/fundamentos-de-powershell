@@ -2,9 +2,11 @@
 # Capítulo 12. Trabajar con datos: ficheros, CSV, JSON y APIs.
 # Apartado: La IA y tú
 
-$inventario | ConvertTo-Json -Depth 10 | Set-Content -Path inventario.json -Encoding utf8
+$inventario | ConvertTo-Json -Depth 10 |
+    Set-Content -Path inventario.json -Encoding utf8
 
-$recuperado = Get-Content -Path inventario.json -Raw | ConvertFrom-Json
+$recuperado = Get-Content -Path inventario.json -Raw |
+    ConvertFrom-Json
 $recuperado.Equipos[0].Discos[0].TamanoGB
 
 # ----------------------------------------------------------------------

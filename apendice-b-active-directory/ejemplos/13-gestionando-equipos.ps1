@@ -2,7 +2,8 @@
 # Apéndice B. Gestionando Active Directory.
 # Apartado: Gestionando equipos
 
-Get-ADComputer -Filter "OperatingSystem -like 'Windows*' -and Enabled -eq 'False'"
+Get-ADComputer -Filter `
+    "OperatingSystem -like 'Windows*' -and Enabled -eq 'False'"
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):

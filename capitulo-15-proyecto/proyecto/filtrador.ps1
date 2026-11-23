@@ -14,13 +14,16 @@ function filtrador
     $rutaOrigen  = Join-Path -Path $Ruta -ChildPath $Nombre
     $rutaDestino = Join-Path -Path $Ruta -ChildPath $Anio
 
-    if ($PSCmdlet.ShouldProcess($rutaOrigen, "Copiar a $rutaDestino")) {
+    if ($PSCmdlet.ShouldProcess($rutaOrigen,
+                                "Copiar a $rutaDestino")) {
         try {
             # Si no existe, crea la carpeta del año
             if (-not (Test-Path -Path $rutaDestino)) {
-                New-Item -Path $rutaDestino -ItemType Directory -ErrorAction Stop | Out-Null
+                New-Item -Path $rutaDestino -ItemType Directory `
+                    -ErrorAction Stop | Out-Null
             }
-            Copy-Item -Path $rutaOrigen -Destination $rutaDestino -ErrorAction Stop
+            Copy-Item -Path $rutaOrigen -Destination $rutaDestino `
+                -ErrorAction Stop
             $resultado = "Copiado"
         }
         catch {

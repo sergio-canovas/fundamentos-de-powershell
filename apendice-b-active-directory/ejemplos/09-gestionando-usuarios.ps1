@@ -7,4 +7,5 @@
 # Cuando lo hayas entendido, borra la línea del throw.
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
-Get-ADUser -Filter "Office -like '*madrid*'" | Set-ADUser -HomePage "www.ejemplo.com"
+Get-ADUser -Filter "Office -like '*madrid*'" |
+    Set-ADUser -HomePage "www.ejemplo.com"

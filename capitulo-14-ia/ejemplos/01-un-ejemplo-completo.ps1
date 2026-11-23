@@ -8,4 +8,6 @@
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
 $limite = (Get-Date).AddDays(30)
-Get-ChildItem "$HOME\Downloads" -Recurse | Where-Object { $_.LastWriteTime -lt $limite } | Remove-Item -Force
+Get-ChildItem "$HOME\Downloads" -Recurse |
+    Where-Object { $_.LastWriteTime -lt $limite } |
+    Remove-Item -Force

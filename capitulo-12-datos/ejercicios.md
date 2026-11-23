@@ -3,15 +3,32 @@
 Si no has seguido los ejemplos del capítulo, ejecuta antes este código para crear la carpeta y el archivo de partida:
 
 ```powershell
-New-Item -Path C:\Practicas\Datos -ItemType Directory -Force | Out-Null
+New-Item -Path C:\Practicas\Datos -ItemType Directory -Force |
+    Out-Null
 Set-Location -Path C:\Practicas\Datos
 
 $equipos = @(
-    [PSCustomObject]@{ Nombre = "VLC-1234567"; Puesto = 8;  SO = "Windows 10"; Responsable = "María" }
-    [PSCustomObject]@{ Nombre = "VLC-1234568"; Puesto = 9;  SO = "Windows 11"; Responsable = "Íñigo" }
-    [PSCustomObject]@{ Nombre = "VLC-1234569"; Puesto = 10; SO = "Windows 11"; Responsable = "Begoña" }
+    [PSCustomObject]@{
+        Nombre      = "VLC-1234567"
+        Puesto      = 8
+        SO          = "Windows 10"
+        Responsable = "María"
+    }
+    [PSCustomObject]@{
+        Nombre      = "VLC-1234568"
+        Puesto      = 9
+        SO          = "Windows 11"
+        Responsable = "Íñigo"
+    }
+    [PSCustomObject]@{
+        Nombre      = "VLC-1234569"
+        Puesto      = 10
+        SO          = "Windows 11"
+        Responsable = "Begoña"
+    }
 )
-$equipos | Export-Csv -Path equipos.csv -NoTypeInformation -Encoding utf8
+$equipos |
+    Export-Csv -Path equipos.csv -NoTypeInformation -Encoding utf8
 ```
 
 **Nivel 1.** Crea un archivo `registro.txt` cuya primera línea sea "Inicio del script: " seguido de la fecha y la hora actuales. Añade tres líneas más: "Copiando archivos...", "Comprimiendo..." y "Fin del script". Después, muestra solo las dos últimas líneas y cuántas líneas tiene el archivo en total.

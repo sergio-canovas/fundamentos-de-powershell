@@ -2,7 +2,9 @@
 # Capítulo 6. Objetos y pipeline.
 # Apartado: Filtrando objetos > Where-Object
 
-Get-Service | Where-Object { $_.Status -eq "Running" -and $_.Name -like "Win*" }
+Get-Service | Where-Object {
+    $_.Status -eq "Running" -and $_.Name -like "Win*"
+}
 
 # ----------------------------------------------------------------------
 # Salida que aparece en el libro (la tuya puede variar):

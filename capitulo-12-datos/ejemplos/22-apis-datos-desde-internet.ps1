@@ -2,7 +2,8 @@
 # Capítulo 12. Trabajar con datos: ficheros, CSV, JSON y APIs.
 # Apartado: APIs: datos desde internet
 
-$festivos = Invoke-RestMethod -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
+$festivos = Invoke-RestMethod `
+    -Uri "https://date.nager.at/api/v3/PublicHolidays/2027/ES"
 $festivos.Count
 $festivos[0]
 

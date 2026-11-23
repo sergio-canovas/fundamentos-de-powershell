@@ -7,9 +7,15 @@
 # Cuando lo hayas entendido, borra la línea del throw.
 throw "Lee el script antes de ejecutarlo. Cuando lo hayas entendido, borra esta línea."
 
-Write-Host -Object "Hola"                      # Escribe en pantalla
-Read-Host -Prompt "Introduce tu edad"          # Muestra el mensaje y espera a que escribamos
-Clear-Host                                     # Limpia la pantalla. No admite parámetros
-Get-Process                                    # Lista los procesos en ejecución
-Stop-Process -Name notepad                     # Detiene un proceso por su nombre
-Stop-Computer -Force                           # Apaga el equipo. Restart-Computer lo reinicia
+# Escribe en pantalla
+Write-Host -Object "Hola"
+# Muestra el mensaje y espera a que escribamos
+Read-Host -Prompt "Introduce tu edad"
+# Limpia la pantalla. No admite parámetros
+Clear-Host
+# Lista los procesos en ejecución
+Get-Process
+# Detiene un proceso por su nombre
+Stop-Process -Name notepad
+# Apaga el equipo. Restart-Computer lo reinicia
+Stop-Computer -Force

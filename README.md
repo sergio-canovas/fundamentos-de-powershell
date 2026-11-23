@@ -1,6 +1,6 @@
 # Fundamentos de PowerShell (2ª edición)
 
-Código del libro *Fundamentos de PowerShell. Bases para la automatización de tareas*, segunda edición, de Sergio Cánovas Cardona.
+Código del libro *Fundamentos de PowerShell. Aprende a programar y automatizar en la era de la IA*, segunda edición, de Sergio Cánovas Cardona.
 
 <!-- [PARA EL AUTOR] Añadir aquí el enlace a Amazon cuando la 2ª edición esté publicada. -->
 

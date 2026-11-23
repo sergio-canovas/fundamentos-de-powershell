@@ -13,4 +13,4 @@ $fecha.AddDays(320)
 # Salida que aparece en el libro (la tuya puede variar):
 # 01/11/2021 13:06:30
 #
-# 17 September 2022 13:06:30
+# sábado, 17 de septiembre de 2022 13:06:30

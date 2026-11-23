@@ -24,11 +24,13 @@ $listado = Get-ChildItem -Path $Ruta -File
 
 # Por cada fichero, llamamos a filtrador y guardamos lo que devuelve
 $resultados = foreach ($fichero in $listado) {
-    filtrador -Anio $fichero.LastWriteTime.Year -Ruta $Ruta -Nombre $fichero.Name
+    filtrador -Anio $fichero.LastWriteTime.Year `
+        -Ruta $Ruta -Nombre $fichero.Name
 }
 
 # Con -WhatIf no se copia nada, así que no hay nada que registrar
 if ($resultados) {
-    $resultados | Export-Csv -Path $Registro -NoTypeInformation -Append -Encoding UTF8
+    $resultados | Export-Csv -Path $Registro -NoTypeInformation `
+        -Append -Encoding UTF8
     $resultados | Format-Table -AutoSize
 }

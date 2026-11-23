@@ -14,7 +14,8 @@ function filtrador
     $rutaOrigen  = Join-Path -Path $Ruta -ChildPath $Nombre
     $rutaDestino = Join-Path -Path $Ruta -ChildPath $Anio
 
-    if ($PSCmdlet.ShouldProcess($rutaOrigen, "Copiar a $rutaDestino")) {
+    if ($PSCmdlet.ShouldProcess($rutaOrigen,
+                                "Copiar a $rutaDestino")) {
         # Aquí va todo lo que crea o copia
     }
 }

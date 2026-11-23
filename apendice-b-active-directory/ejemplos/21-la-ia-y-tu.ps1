@@ -4,7 +4,8 @@
 
 # 1. Buscamos solo donde deben estar y solo los que empiezan por bec
 #    @() asegura que tenemos un array, aunque solo haya un becario
-$becarios = @(Get-ADUser -Filter "SamAccountName -like 'bec*'" -SearchBase "OU=Becarios,DC=PSMola,DC=com")
+$becarios = @(Get-ADUser -Filter "SamAccountName -like 'bec*'" `
+    -SearchBase "OU=Becarios,DC=PSMola,DC=com")
 
 # 2. Contamos y revisamos la lista
 $becarios.Count

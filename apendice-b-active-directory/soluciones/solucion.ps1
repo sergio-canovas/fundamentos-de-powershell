@@ -6,7 +6,8 @@
 # nombre (`Name`) de las cuentas deshabilitadas de la OU `OU=Sistemas,DC=PSMola,DC=com`, y
 # otra línea que diga cuántas son.
 
-$deshabilitados = @(Get-ADUser -Filter "Enabled -eq 'False'" -SearchBase "OU=Sistemas,DC=PSMola,DC=com")
+$deshabilitados = @(Get-ADUser -Filter "Enabled -eq 'False'" `
+    -SearchBase "OU=Sistemas,DC=PSMola,DC=com")
 
 $deshabilitados | Select-Object -Property SamAccountName, Name
 "Cuentas deshabilitadas: $($deshabilitados.Count)"

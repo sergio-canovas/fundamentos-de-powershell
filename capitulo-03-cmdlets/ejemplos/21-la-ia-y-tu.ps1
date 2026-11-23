@@ -8,4 +8,4 @@ Get-Command -ParameterName OlderThan
 # Salida que aparece en el libro (la tuya puede variar):
 # CommandType     Name                                               Version    Source
 # -----------     ----                                               -------    ------
-# Cmdlet          Test-Path                                          7.0.0.0    Microsoft.PowerShell.Management
+# Cmdlet          Test-Path                                          7.0.0.0    Micros…

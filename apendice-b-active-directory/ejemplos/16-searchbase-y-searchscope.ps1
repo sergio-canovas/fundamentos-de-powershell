@@ -3,10 +3,11 @@
 # Apartado: SearchBase y SearchScope
 
 # Definimos la ruta
-$destino = "OU=VAL,OU=WS,DC=PSMola,DC=com"
+$ou = "OU=VAL,OU=WS,DC=PSMola,DC=com"
 
 # Guardamos el listado en la variable $lista
-$lista = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" -SearchBase $destino
+$lista = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" `
+    -SearchBase $ou
 $lista.Count
 
 # ----------------------------------------------------------------------

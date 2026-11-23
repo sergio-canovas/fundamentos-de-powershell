@@ -41,4 +41,5 @@ $cocheUno = [Coche]::new("Ferrari", 220, 5)
 # Line |
 #   23 |      Coche($nombre, $velMax, $numPuertas) {
 #      |                                           ~
-#      | No se encuentra una sobrecarga para "new" y el recuento de argumentos: "0".
+#      | No se encuentra una sobrecarga para "new" y el recuento de
+#      | argumentos: "0".

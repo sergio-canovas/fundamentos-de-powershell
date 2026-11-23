@@ -2,11 +2,14 @@
 # Apéndice B. Gestionando Active Directory.
 # Apartado: SearchBase y SearchScope
 
-$destino = "OU=VAL,OU=WS,DC=PSMola,DC=com"
+$ou = "OU=VAL,OU=WS,DC=PSMola,DC=com"
 
-$base = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" -SearchBase $destino -SearchScope Base
-$unNivel = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" -SearchBase $destino -SearchScope OneLevel
-$todos = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" -SearchBase $destino -SearchScope Subtree
+$base = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" `
+    -SearchBase $ou -SearchScope Base
+$unNivel = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" `
+    -SearchBase $ou -SearchScope OneLevel
+$todos = Get-ADComputer -Filter "OperatingSystem -like 'Windows*'" `
+    -SearchBase $ou -SearchScope Subtree
 
 $base.Count
 $unNivel.Count

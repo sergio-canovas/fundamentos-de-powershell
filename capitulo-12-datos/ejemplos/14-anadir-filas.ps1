@@ -2,7 +2,12 @@
 # Capítulo 12. Trabajar con datos: ficheros, CSV, JSON y APIs.
 # Apartado: CSV > Añadir filas
 
-$nuevo = [PSCustomObject]@{ Nombre = "VLC-1234570"; Puesto = 11; SO = "Windows 11"; Responsable = "Jorge" }
+$nuevo = [PSCustomObject]@{
+    Nombre      = "VLC-1234570"
+    Puesto      = 11
+    SO          = "Windows 11"
+    Responsable = "Jorge"
+}
 $nuevo | Export-Csv -Path equipos.csv -NoTypeInformation -Append
 Get-Content -Path equipos.csv
 
